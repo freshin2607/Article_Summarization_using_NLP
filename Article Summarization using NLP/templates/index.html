@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block body %}
+
+{{ text }}
+
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-text">
+        <h1 class="display-4">Text Summarization</h1>
+    </span>
+  </nav>
+
+<form action="/Analysing" method="post" name="request">
+<div class="Mconatiner">
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Enter Text here...</label>
+        <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="18"></textarea>
+    </div>
+    <input type="text" name="lines" placeholder="no of lines needed" required>
+
+      
+        <button class="button" style="vertical-align:middle"><span>Summarize Text </span></button>
+      
+      
+</div>
+</form>
+
+{% endblock %}

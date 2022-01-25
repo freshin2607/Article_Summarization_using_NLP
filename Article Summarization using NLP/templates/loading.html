@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block body %}
+<script>
+    setTimeout(function(){
+       window.location.href = 'http://127.0.0.1:5000/output';
+    }, 5000);
+ </script>
+
+<img src="{{url_for('static', filename='images/loading3.gif')}}" width="100%"/>
+<h1 class="display-4" style="text-align: center;">Please wait while we analyse the results...</h1>
+{% endblock %}

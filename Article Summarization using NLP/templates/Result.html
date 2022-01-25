@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block body %}
+
+{{ text }}
+
+
+
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-text">
+        <h1 class="display-4">Text Summarization</h1>
+    </span>
+</nav>
+
+
+
+
+
+<!-- <div >
+
+ 
+    <div width="30%">
+        <label for="exampleFormControlTextarea1">Summarized Text</label>
+
+        <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="18">{{ summarized }}</textarea>
+    </div>
+    <div >
+        <label for="exampleFormControlTextarea1">Original Text</label>
+        <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="18">{{ original }}</textarea>
+    </div>
+
+      
+        // <button class="button" style="vertical-align:middle"><span>Summarize Text </span></button> //
+      
+      
+</div> -->
+
+<div class="grid-container">
+    
+    <div class="grid-child purple" id="summ">
+        <h1 class="display-4">Summarized Text</h1>
+        <br>
+        {{ summarized }}
+    </div>
+
+    
+    <div class="grid-child green id="org">
+        <h6 class="display-4">Original Text Text</h6>
+        <br>
+        {{ original }}
+    </div>
+
+    </div>
+
+
+<!-- <div class="container">
+    <div class="one">{{ summarized }}</div>
+    <div class="two">{{ original }}</div>
+</div> -->
+
+{% endblock %}
